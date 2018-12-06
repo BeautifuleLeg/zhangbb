@@ -41,6 +41,7 @@ public class TestController {
 //		Test test=testService.getTestById(1);
 //		System.out.println("用户名："+test.getName()+"    密码："+test.getPassword());
 //		request.setAttribute("name", test.getName());
+		//
 		request.setAttribute("name", "111");
 		//test
 		return "main";
