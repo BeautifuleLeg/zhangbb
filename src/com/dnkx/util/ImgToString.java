@@ -17,6 +17,7 @@ import javax.swing.*;
 public class ImgToString {
 
     public static void main(String[] args) throws IOException {
+    //test
         BufferedImage image_buffer = ImageIO.read(new File("E:\\trans-pro\\UNIONPAYQQ001\\广州琼悦科技有限公司\\3.jpg"));
         String string_image = imgToBase64String(image_buffer);
         System.out.println(string_image);
