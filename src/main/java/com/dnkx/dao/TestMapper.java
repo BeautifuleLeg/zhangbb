@@ -2,7 +2,7 @@ package com.dnkx.dao;
 
 import com.dnkx.pojo.Test;
 
-public interface TestDao {
+public interface TestMapper {
     int deleteByPrimaryKey(Integer id);
 
     int insert(Test record);
