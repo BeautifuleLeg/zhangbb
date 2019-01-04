@@ -17,12 +17,16 @@ public class TestServiceImpl implements TestService{
 
 	@Autowired
 	private TestMapper testDao;
-	
-	
-	@Override
-	public Test getTestById(Integer id) {
 
-		return testDao.selectByPrimaryKey(id);
+
+	public Test getTestById(Integer id) {
+		return null;
 	}
+
+	public int insert(Test re) {
+		int record = 	testDao.insertRe(re);
+		return re.getId();
+	}
+
 
 }

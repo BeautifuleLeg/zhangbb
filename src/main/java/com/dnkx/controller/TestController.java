@@ -45,10 +45,12 @@ public class TestController {
 //		Test test=testService.getTestById(1);
 //		System.out.println("用户名："+test.getName()+"    密码："+test.getPassword());
 //		request.setAttribute("name", test.getName());
-		log.info(request.getRequestURI()+"测试测试测试");
-		Test test = testService.getTestById(100);
-		System.out.println("测试测试测试");
-		request.setAttribute("name", "111");
+
+		Test test = new Test();
+		test.setName("测试1");
+		test.setPassword("1112222111");
+		int re = testService.insert(test);
+		System.out.println("re:"+re);
 		//test
 		return "main";
 	}

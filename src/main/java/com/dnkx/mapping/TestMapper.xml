@@ -68,4 +68,10 @@
       password = #{password,jdbcType=VARCHAR}
     where id = #{id,jdbcType=INTEGER}
   </update>
+
+    <insert id="insertRe"  useGeneratedKeys="true" keyProperty="id" parameterType="com.dnkx.pojo.Test" >
+      insert into test(name,password) values (
+        #{name,jdbcType=VARCHAR}, #{password,jdbcType=VARCHAR}
+        )
+    </insert>
 </mapper>

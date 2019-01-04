@@ -1,17 +1,17 @@
 package com.dnkx.pojo;
 
 public class Test {
-    private Integer id;
+    private int id;
 
     private String name;
 
     private String password;
 
-    public Integer getId() {
+    public int getId() {
         return id;
     }
 
-    public void setId(Integer id) {
+    public void setId(int id) {
         this.id = id;
     }
 

@@ -4,4 +4,6 @@ import com.dnkx.pojo.Test;
 
 public interface TestService {
 	public Test getTestById(Integer id);
+
+	int insert(Test re);
 }
